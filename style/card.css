@@ -31,8 +31,6 @@ section{
 .left{
     color: #ff007c;
 }
-.right{
-}
 
 .projects-catalog{
     display: flex;
@@ -217,7 +215,6 @@ section:not(:nth-of-type(1)){
     padding: .4rem;
     margin-top: var(--fs-1-3);
     margin-bottom: .7rem;
-    /* background-color: var(--background-1); */
     flex-wrap: wrap;
     position: relative;
 }
@@ -254,14 +251,15 @@ section:not(:nth-of-type(1)){
     border-radius: .2rem;
   }
 .subtitle span.active{
+    border-top: 1px solid linear-gradient(url());
     background-color: var(--little);
+    transition: .5s;
 }
 .subtitle__me,
 .subtitle__education,
 .subtitle__experience{
     cursor: pointer;
     padding: .7rem;
-    /* background-color: #c71781; */
     border-radius: .5rem;
     margin:0 1rem;
     border: 1px solid #ff007c;
@@ -275,7 +273,6 @@ section:not(:nth-of-type(1)){
 .subtitle__content__me,
 .subtitle__content__education{
     position: absolute;
-    /* border: 1px solid green; */
     padding: var(--fs-1);
 }
 .subtitle__content__experience{
@@ -300,59 +297,34 @@ Skills section
 .skills .container{
     background-color: transparent;
 }
-.skill__html{
-
-}
 .skill{
     width: 80px;
     height: 80px;
-    background-position: center;
-    background-size: cover;
-    display: inline-flex;
-    background-repeat: no-repeat;
     margin:.5rem;
-    align-items: center;
     border-radius: 50%;
     box-shadow: -3px 0px 3px 3px rgba(0,0,0,0.2),
-    inset 0px 0px 30px 2px rgba(255,255,255,0.5);
-    /* filter: grayscale(80%); */
+    inset 0px 0px 2px 2px rgba(255,255,255,0.5);
     transition: filter .5s;
     cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-/* .skill:hover{
-    filter: grayscale(0);
-} */
-.skill.css{
-    background-image: url(/images/css3.png);
-}
-.skill.csharp{
-    background-image: url(/images/csharp.png);
-}
-.skill.javascript{
-    background-image: url(/images/javascript.png);
-}
-.skill.typescript{
-    background-image: url(/images/typescript.png);
-}
-.skill.asp{
-    background-image: url(/images/asp.png);
+.skill img{
+    width: 70%;
+    height: 70%; 
 }
 .skill.ef{
     background-image: url(/images/efcore.png);
+    background-position: center;
+    background-size: contain;
 }
-.skill.sql{
-}
-.skill.server{
-    background-image: url(/images/sqlserver.png);
-}
+
 
 @media screen and (max-width: 720px){
     .about-image,
     .about-info{
         flex-basis: 100%;
-    }
-    .about-info{
-        /* margin-top: ; */
     }
     .subtitle__me,
     .subtitle__education,

@@ -5,21 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/style/card.css" />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <link rel="stylesheet" href="/style/card.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </head>
   <body>
-    <div class="backdrop"></div>
+    <div class="backdrop" id="backdrop"></div>
     <header class="header">
       <nav class="menu">
-          <div class="menu__button">
+          <div class="menu__button" id="menu__button">
             <ion-icon name="grid-outline"></ion-icon>
           </div>
           <li style="--i:0">
@@ -27,20 +22,20 @@
               <ion-icon name="home-outline"></ion-icon>
             </a>
           </li>
-          <li  style="--i:1">
+          <li  style="--i:1" id="menu__option">
             <a href="/profile.html#about">
               <ion-icon name="person-outline"></ion-icon>
             </a>
           </li>
-          <li  style="--i:2">
+          <li  style="--i:2" id="menu__option">
             <a href="/profile.html#skill">
               <ion-icon name="code-slash-outline"></ion-icon>
             </a>
           </li>
-          <li style="--i:3">
+          <li style="--i:3" id="menu__option">
             <a href="/profile.html#projects" ><ion-icon name="newspaper-outline"></ion-icon></a>
           </li>
-          <li  style="--i:4"><a href="/profile.html#contact"><ion-icon name="chatbubbles-outline"></ion-icon></a></li>
+          <li  style="--i:4" id="menu__option"><a href="/profile.html#contact"><ion-icon name="chatbubbles-outline"></ion-icon></a></li>
       </nav>
     </header>
 
@@ -113,15 +108,31 @@
       <div class="title">Skills</div>
       <div class="container">
         <div class="skills__container">
-          <div data-skill="Html" class="skill html"></div>
-          <div data-skill="CSS" class="skill css"></div>
-          <div data-skill="C#" class="skill csharp"></div>
-          <div data-skill="JavaScript" class="skill javascript"></div>
-          <div data-skill="TypeScript" class="skill typescript"></div>
-          <div data-skill="ASP.NET Core" class="skill asp"></div>
+          <div data-skill="Html" class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="skill--image"/>
+          </div>
+          <div data-skill="CSS" class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="skill--image"/>
+          </div>
+          <div data-skill="C#" class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" class="skill--image"/>
+          </div>
+          <div data-skill="JavaScript" class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="skill--image"/>
+          </div>
+          <div data-skill="TypeScript" class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" class="skill--image"/>
+          </div>
+          <div data-skill="ASP.NET Core" class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" class="skill--image"/>
+          </div>
           <div data-skill="EF Core" class="skill ef"></div>
-          <div data-skill="SQL Server" class="skill server"></div>
-          <div data-skill="SQL" class="skill sql"></div>
+          <div data-skill="SQL Server" class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg" class="skill--image"/>
+          </div>
+          <div data-skill="Dart" class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" class="skill--image"/>
+          </div>
         </div>
       </div>
     </section>

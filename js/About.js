@@ -30,7 +30,6 @@ export class About{
             slider1.style.transform = "translateY(400px)";
             slider2.style.display = "none";
             slider2.style.transform = "translateY(400px)";
-        console.log("Button clicked");
         }
     }
 
