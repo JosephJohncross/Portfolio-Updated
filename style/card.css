@@ -296,6 +296,7 @@ Skills section
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin: 0 1rem;
 }
 .skills .container{
     background-color: transparent;
@@ -337,6 +338,7 @@ form{
 label{
     display: block;
     margin: 1.5rem 0 .5rem;
+    /* color: var(--little); */
 }
 input,
 textarea{
@@ -346,22 +348,46 @@ textarea{
     height: 70px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     padding: .5rem 1rem;
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-color: rgba(253, 231, 243, 0.42);
     color: #fff;
     font-family: 'Tajawal', sans-serif;
     font-size: 1.07rem;
+    transition: .3s;
 }
-input{
+input:focus{
     border-bottom: 2px solid #ff007c;
-
 }
 textarea{
     width: 100%;
     resize: none;
     height: 300px;
+    padding:1rem;
 }
-
-
+textarea:focus{
+    border: 1px solid #ff007c;
+}
+.btn{
+    width: 200px;
+    height: 50px;
+    margin-top: var(--fs-1);
+    margin: 1rem 0;
+    border-radius: .7rem;
+    border: none;
+    border: 1px solid #ff007c;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.07rem;
+    letter-spacing: .1rem;
+    background-color: transparent;
+    transition: .3s;
+    font-family: 'Tajawal', sans-serif;
+}
+.btn:hover{
+    color: #ff007c;
+    background-color: #fff; 
+    border: none;
+}
 @media screen and (max-width: 720px){
     .about-image,
     .about-info{
