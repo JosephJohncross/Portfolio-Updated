@@ -4,7 +4,6 @@ const skillTitle = document.querySelector(".skills .title");
 const subTitle = document.querySelector('.subtitle');
 const subTitleSelection = document.querySelectorAll('.subtitle span');
 
-console.log(title);
 document.addEventListener("scroll", () => {
   for (let item of title) {
     if (item.getBoundingClientRect().top === 0) {
