@@ -1,31 +1,17 @@
-let navToggler = document.querySelector('.nav-toggler');
-// const windowHeight = 
-let span1 = document.querySelector('.span1');
-let span2 = document.querySelector('.span2');
-let span3 = document.querySelector('.span3');
+class Main {
+    constructor() {
+        this.navToggler = document.querySelector('.menu__button');
+        this.menu = document.querySelector('.menu');
+        this.backdrop = document.querySelector('.backdrop');
 
-let container = document.querySelector('.container');
-let collection = document.querySelectorAll('.active ul')
-let active =  document.querySelector('.active');
+        this.navToggler.addEventListener('click', this.navigatorToggler.bind(this));
+        this.backdrop.addEventListener('click', this.navigatorToggler.bind(this));
+    }
 
-
-navToggler.onclick = function(event) {
-    
-    active.classList.toggle('side-menu');
-    active.classList.toggle('menu');
-    event.preventDefault();
-    
-    navToggler.classList.toggle('close');
-    navToggler.classList.toggle('menu-icon');
-    
+    navigatorToggler() {
+        this.menu.classList.toggle('active');
+        this.backdrop.classList.toggle('active');
+    }
 }
 
-collection.forEach(function(item) {
-    item.addEventListener('click', () => {
-        active.classList.remove('side-menu');
-        active.classList.add('menu');
-        navToggler.classList.add('menu-icon');
-        navToggler.classList.remove('close');
-    })
-})
-
+new Main();
