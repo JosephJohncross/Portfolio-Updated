@@ -281,12 +281,12 @@ section:not(:nth-of-type(1)) .title{
 .subtitle__content__experience{
     display: none;
     transform: translateY(400px);
-    background-color: blue;
+    /* background-color: blue; */
 }
 .subtitle__content__education{
     display: none;
     transform: translateY(400px);
-    background-color: green;
+    /* background-color: green; */
 }
 
 /*--------
